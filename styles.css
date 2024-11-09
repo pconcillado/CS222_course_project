@@ -9,15 +9,13 @@
     background: #edcef0;
   }
   
-  /* Header/Blog Title */
-  .header {
-    padding: 30px;
-    text-align: center;
-    background: rgb(255, 255, 255);
-  }
+ 
   
-  .h1 {
-    font-size: 50px;
+  h1 {
+    font-size: 40px;
+    background-color: white;
+    padding: 10px;
+    margin: auto;
   }
   
 /* Style the navigation bar */
