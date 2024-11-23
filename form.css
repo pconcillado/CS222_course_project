@@ -1,0 +1,63 @@
+form { 
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Ensure the form width is responsive */
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px #edcef0;
+    box-sizing: border-box; /* Prevents padding from affecting the total width */
+}
+
+fieldset {
+    border-color: #edcef0;
+}
+
+h4 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: white;
+    background-color:  #edcef0;
+    padding: 15px;
+}
+
+label, input, button {
+    margin: 10px 0;
+    width: 100%; 
+}
+
+input, button {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color:  #edcef0;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ddd;
+}
+
+#iframe-results {
+    display: none;
+}
+
+/* design for smaller screens */
+@media (max-width: 600px) {
+    form {
+        width: 90%; 
+    }
+
+    input, button {
+        width: 100%; 
+    }
+}
+
+
+

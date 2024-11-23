@@ -1,0 +1,61 @@
+h3 {
+    background-color: pink;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+table {
+    width: 90%; 
+    max-width: 1200px; /* Max width for large screens */
+    margin: 0 auto; 
+    border-collapse: collapse; 
+    border: 20px groove none; 
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px; 
+    text-align: left;
+    vertical-align: top;
+}
+
+caption {
+    caption-side: top;
+    text-align: left;
+    font-size: 1.4em;
+    background-color: #edcef0;
+    color: white;
+    padding: 10px;
+}
+
+table col#firstCol {
+    width: 150px; 
+}
+
+.Normal {
+    background-color: rgb(95, 204, 95);
+}
+
+.ImpairedGlucose {
+    background-color: rgb(236, 236, 147);
+}
+
+.Diabetic {
+    background-color: rgb(232, 141, 141);
+}
+
+/* for Smaller Screens */
+@media (max-width: 768px) {
+    table {
+        width: 100%; 
+    }
+
+    th, td {
+        padding: 8px;
+    }
+
+    caption {
+        font-size: 1.2em; 
+    }
+}

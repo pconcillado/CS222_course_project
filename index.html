@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main Page</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="form.css">
 </head>
 
 <body>
@@ -26,8 +27,10 @@
             <div class="leftcolumn">
               <div class="card">
                 <h2>Welcome to CNMI’s Disease Trio</h2>
-                <h5>This website explores how diabetes, hypertension, and kidney disease are interconnected in a domino-like effect. Learn about each disease and how managing one can prevent others.</h5>
-                <div class="fakeimg" style="height:200px;">Image</div>
+                <p>This website explores how diabetes, hypertension, and kidney disease are interconnected in a domino-like effect. Learn about each disease and how managing one can prevent others.</p>
+                <div class="img">
+                  <img src="img/intro.png">
+                </div>
                 <p>Some text..</p>
                 <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
               </div>
@@ -41,27 +44,70 @@
             </div>
             <div class="rightcolumn">
               <div class="card">
+                <hr>
                 <h2>About Me</h2>
-                <div class="fakeimg" style="height:100px;">Image</div>
-                <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-              </div>
+                <img src="img/avatar.png">
+                <p><b>By: Patreisha Mae Concillado, SN </b><br>
+                  I am a 2nd year Nursing Student and for the past 3 semesters most of my patient cases involved one of three, but most of the time, it was the Disease Trio. The information provided is based on my personal experience and not that of a medical professional.
+                </p>
+                <hr>
+              </div>                  
+              
               <div class="card">
-                <h3>Popular Post</h3>
-                <div class="fakeimg"><p>Image</p></div>
-                <div class="fakeimg"><p>Image</p></div>
-                <div class="fakeimg"><p>Image</p></div>
-              </div>
-              <div class="card">
-                <h3>Follow Me</h3>
-                <p>Some text..</p>
+                <form method="POST" action="https://jkorpela.fi/cgi-bin/echo.cgi" target="cgi-results">
+                  <h4>Contact Form</h4>
+                     <fieldset>
+                      <legend>Name Information</legend>
+                      <label for="firstName">First Name:</label>
+                      <input type="text" class="name-info" tabindex="1" id="firstName" name="firstName" placeholder="First Name" required>
+                      <label for="lastName">Last Name:</label>
+                      <input type="text" class="name-info" tabindex="2" id="lastName" name="lastName" placeholder="Last Name" required>
+                     </fieldset> 
+              
+                     <fieldset>
+                      <legend>Contact Information</legend>
+                      <label for="email">Email:</label>
+                      <input type="email" class="contact-info" tabindex="3" id="email" name="email" placeholder="your.email@email.com" required>
+                      <label for="phone">Phone:</label>
+                      <input type="tel" class= "contact-info" tabindex="4" id="phone" name="phone" placeholder="Your Phone Number" required>
+                     </fieldset>
+                      
+                    <fieldset> 
+                      <legend>Birthday</legend>
+                      <label for="birthday">Date of Birth:</label>
+                      <input type="date" class= "birthday-info" tabindex="5" id="birthday" name="birthday" placeholder="Your birthday" required>
+                      <label for="today">Today's Date</label>
+                      <input type="date" class= "birthday-info" tabindex="6" name="today" value="2024-11-07" id="today">
+                    </fieldset>
+              
+                    <fieldset>
+                      <legend>Mode of Contact</legend>
+              
+                      <label>
+                          <input type="radio" tabindex="7" name="Contact" value="Email">Email</label>
+                      
+                      <label>
+                          <input type="radio" tabindex="8" name="Contact" value="Phone Number"> Phone Number</label>
+                    </fieldset>
+
+                  <fieldset>
+                      <button type="submit" tabindex="10">Submit</button>
+                  </fieldset> 
+          
+                    <iframe id="cgi-results" name="cgi-results" style="display: block; width: 100%; height: 100px; border: none;"></iframe>
+                    <script>
+                      document.querySelector("form").addEventListener("submit", function () {
+                          setTimeout(() => {
+                              window.location.href = window.location.href; // Redirects back to the same page
+                          }, 3000); // Adjust delay to suit your needs
+                      });
+                  </script>
+                  </form>                  
               </div>
             </div>
           </div>
-
-
-    <footer>
-        <p>© 2024 CNMI’s Disease Trio</p>
-        
-    </footer>
+  <footer>
+    <p>© 2024 CNMI’s Disease Trio</p>  
+  </footer>
 </body>
 </html>
