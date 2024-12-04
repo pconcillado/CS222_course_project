@@ -6,38 +6,94 @@
     <title>Diabetes</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="animation.css">
+
 </head>
 <body>
     <header>
-        <h1>Domino Effect</h1>
-        <nav class="navbar">
+        <h1>
+          <img class="logo" src="img/logo.jpg">
+          Domino Effect</h1>
+          <div class="loader" id="loader"></div>
+          <nav class="navbar">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="diabetes.html">Diabetes</a></li>
-                <li><a href="hypertension.html">Hypertension</a></li>
-                <li><a href="kidneydisease.html">Kidney Disease</a></li>
-                <li><a href="dominoeffect.html">Domino Effect</a></li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="diabetes.html">Diabetes</a></li>
+              <li><a href="hypertension.html">Hypertension</a></li>
+              <li><a href="kidneydisease.html">Kidney Disease</a></li>
+              <li><a href="dominoeffect.html">Domino Effect</a></li>
             </ul>
-        </nav>
-    </header>
+          </nav>
+        
+          <script src="animation.js"></script>
+      </header>
 
 <div class="row">
     <div class="leftcolumn">
       <div class="card">
         <h2>How do they correlate?</h2>
-        <h5> It is ..............................</h5>
-        <div class="fakeimg" style="height:200px;">Image</div>
-        <p>Some text..</p>
-        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+        <h5>Domino Effect: Hypertension, Diabetes, and Kidney Disease</h5>
+        <p>The connection between hypertension, diabetes, and kidney disease can be explained as a domino effect:</p>
+
+        <ul>
+          <li><u>Hypertension to Kidney Disease:</u> Hypertension damages the blood vessels in the kidneys over time, reducing their ability to filter waste effectively. This can lead to CKD.</li>
+          <li><u>Kidney Disease to Hypertension:</u> Kidneys play a crucial role in regulating blood pressue through producing an enzyme called renin. Renin is released when the kidneys detect a drop in blood pressure or low sodium levels. Damaged kidneys release too much renin which constricts the blood vessels and causes hypertension.</li>
+          <li><u>Diabetes to Kidney Disease:</u> Uncontrolled diabetes leads to high blood sugar levels, which damage the tiny blood vessels in the kidneys. Imagine that too much sugar thickens the blood so that causes extra strain on both the heart and blood vessels. This is a primary cause of kidney disease, known as diabetic nephropathy.</li>
+          <li><u>Hypertension and Diabetes Together:</u> Hypertension and diabetes often coexist, and their combined effects significantly accelerate kidney damage, leading to CKD. <i>They do not directly cause one another but the presence of one can exacerbate the other.</i></li>
+        </ul>
+  
+
+        <div>
+          <img src="img/Screenshot 2024-12-04 152338.png">
+        </div>
+
+
+      <h2> Overall Health Complications: </h2>
+      <ul>
+          <li>Increased Risk of Cardiovascular Disease (CVD). The trio raises the risk of heart attacks, strokes, and other heart problems.</li>
+          <li>Chronic Kidney Disease (CKD) Progression: </li>
+          <li>Reduced Quality of Life: Fatigue, frequent hospitalizations, and emotional distress affect daily life.</li>
+          <li>Healthcare Costs: High expenses from medications, dialysis, and doctor visits.</li>
+          <li>Loss of Productivity: Chronic illness leads to missed workdays, early retirement, and reduced income. </li>
+          <li>Epidemic Scale: Rising rates due to obesity, sedentary lifestyles, and aging populations.</li>
+      </ul>
+      
+      
+
       </div>
-      <div class="card">
-        <h2>TITLE HEADING</h2>
-        <h5>Title description, Sep 2, 2017</h5>
-        <div class="fakeimg" style="height:200px;">Image</div>
-        <p>Some text..</p>
-        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-      </div>
+    <div class="card">
+      <h2>How can this be prevented?</h2>
+      <h5>Updated: December 04, 2024</h5>
+        <div class="video">
+          <iframe 
+          src="https://www.youtube.com/embed/gDzVbIxFJzY" 
+          frameborder="0" 
+          allowfullscreen>
+      </iframe>
+        </video>
+        </div> 
+        <ol>
+          <h2>How to Prevent the Disease Trio</h2>
+          <li>Healthy Diet
+            <ul>Eat fruits, vegetables, whole grains, and lean proteins. Limit salt and sugar.</ul></li>
+          <li>Exercise
+            <ul>Aim for at least 150 minutes of moderate activity per week.</ul></li>
+          <li>Blood Pressure
+            <ul>Keep it under 120/80 mm Hg with healthy habits and medication if needed.</ul></li>
+          <li>Control Blood Sugar
+            <ul>Maintain a balanced diet, exercise, and monitor blood glucose levels.</ul></li>
+          <li>Avoid Smoking & Limit Alcohol
+            <ul>Both increase risk factors.</ul></li>
+          <li>Regular Check-Ups
+            <ul>Get health screenings to catch early signs of problems.</ul></li>
+          <li>Manage Stress
+            <ul>Use techniques like meditation to lower stress.</ul></li>
+        </ol>
     </div>
+   </div>
+
+
+
     <div class="rightcolumn">
       <div class="card">
         <hr>
@@ -103,7 +159,16 @@
     </div>
   </div>
 
-    <footer>
+    <footer class="footer">
+      <ul>
+        <b>Want to learn more about the Disease Trio?</b>
+        <i>Contact me below.</i>
+        <p>Email: <a href="mailto:your-patreishac@gmail.com">patreishac@gmail.com</a></p>
+        <p>Phone: <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+
+        
+      </ul>
+
         <p>© 2024 CNMI’s Disease Trio</p>
     </footer>
 </body>

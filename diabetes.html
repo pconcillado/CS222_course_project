@@ -7,32 +7,73 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="form.css">
     <link rel="stylesheet" href="tables.css">
+    <link rel="stylesheet" href="animation.css">
+
 </head>
 <body>
     <header>
-        <h1>Diabetes</h1>
+        <h1>
+          <img class="logo" src="img/logo.jpg">
+          Diabetes</h1>
+          <div class="loader" id="loader"></div>
         <nav class="navbar">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="diabetes.html">Diabetes</a></li>
-                <li><a href="hypertension.html">Hypertension</a></li>
-                <li><a href="kidneydisease.html">Kidney Disease</a></li>
-                <li><a href="dominoeffect.html">Domino Effect</a></li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="diabetes.html">Diabetes</a></li>
+              <li><a href="hypertension.html">Hypertension</a></li>
+              <li><a href="kidneydisease.html">Kidney Disease</a></li>
+              <li><a href="dominoeffect.html">Domino Effect</a></li>
             </ul>
         </nav>
+        
+          <script src="animation.js"></script>
+  
     </header>
 
     <div class="row">
         <div class="leftcolumn">
           <div class="card">
             <h2>What is Diabetes?</h2>
-            <p>Diabetes is a condition that affects how your body uses blood sugar (glucose). High levels of glucose can lead to serious health problems, including kidney disease and hypertension.</p>
+            <p>Diabetes is a chronic health condition that affects how your body uses blood sugar (glucose), in other words, how your body converts food into energy. It is characterized by consistent hyperglycemia episodes (high blood sugar) during fasting periods. Hyperglycemia can lead to serious health problems, including kidney disease and hypertension.</p>
             <img src="img/bloodsugar.png">
-            <p>Some text..</p>
-            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+            <p>
+              <ol>
+                <b>Types of Diabetes:</b>
+                <li> <u>Type 1 diabetes</u>
+                  <ul>
+                    <li>This is caused by an autoimmune reaction where the body attacks insulin producing cells in the pancreas.</li>
+                  </ul>
+                </li>
+
+                <li><u>Type 2 diabetes</u>
+                  <ul>
+                    <li>This occurs when the body becomes resistant to insulin or doesn't produce enough.</li>
+                  </ul>
+                </li>
+
+
+                <li><u>Gestational Diabetse</u>
+                  <ul>
+                    <li>This is caused by hormonal changes during pregnancy that affects insulin.</li>
+                  </ul>
+                </li>
+              </ol>
+            </p>
+            <p>
+              <ol>
+                <b>Common symptoms:</b>
+                <li>Frequent urination</li>
+                <li>Excessive Thirst</li>
+                <li>Extreme hunger</li>
+                <li>Unexplained weight loss</li>
+                <li>Fatigue and Irritability</li>
+                <li>Blurred vision</li>
+              </ol>
+            </p>
           </div>
 
-          <div class="card" >
+          <div class="card">
+            <h5>Refer to table below for normal Blood Glucose levels</h5>
             <table>
                 <caption><b>Blood Sugar Normal Ranges</b></caption>
                 <colgroup>
@@ -137,7 +178,16 @@
         </div>
       </div>
 
-    <footer>
+    <footer class="footer">
+      <ul>
+        <b>Want to learn more about diabetes?</b>
+        <i>Visit the listed sources below!</i>
+        <li><a href="https://www.mayoclinic.org/diseases-conditions/diabetes/symptoms-causes/syc-20371444" target="_blank">Visit Mayo Clinic</a></li>
+        <li><a href="https://www.who.int/news-room/fact-sheets/detail/diabetes" target="_blank">Visit WHO</a></li>
+        <li><a href="https://diabetes.org/" target="_blank">Visit Diabetes.org</a></li>
+      </ul>
+      
+
         <p>© 2024 CNMI’s Disease Trio</p>
     </footer>
 </body>

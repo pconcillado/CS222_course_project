@@ -45,6 +45,25 @@ table col#firstCol {
     background-color: rgb(232, 141, 141);
 }
 
+.Slightly {
+    background-color: rgb(236, 236, 147);
+}
+
+.Hypertension1 {
+    background-color: rgb(232, 141, 141);
+}
+
+.Hypertension2 {
+    background-color: rgb(218, 50, 50);
+}
+
+.Crisis {
+    background-color: rgb(129, 0, 0);
+}
+
+
+
+
 /* for Smaller Screens */
 @media (max-width: 768px) {
     table {

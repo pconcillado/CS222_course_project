@@ -6,38 +6,125 @@
     <title>Hypertension</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="tables.css">
+    <link rel="stylesheet" href="animation.css">
+
 </head>
 <body>
     <header>
-        <h1>Hypertension</h1>
-        <nav class="navbar">
+        <h1>
+          <img class="logo" src="img/logo.jpg">
+
+          Hypertension</h1>
+          <div class="loader" id="loader"></div>
+          <nav class="navbar">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="diabetes.html">Diabetes</a></li>
-                <li><a href="hypertension.html">Hypertension</a></li>
-                <li><a href="kidneydisease.html">Kidney Disease</a></li>
-                <li><a href="dominoeffect.html">Domino Effect</a></li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="diabetes.html">Diabetes</a></li>
+              <li><a href="hypertension.html">Hypertension</a></li>
+              <li><a href="kidneydisease.html">Kidney Disease</a></li>
+              <li><a href="dominoeffect.html">Domino Effect</a></li>
             </ul>
-        </nav>
-    </header>
+          </nav>
+        
+          <script src="animation.js"></script>
+
+      </header>
 
     <div class="row">
         <div class="leftcolumn">
           <div class="card">
             <h2>What is Hypertension?</h2>
-            <h5> It is ..............................</h5>
+            <p>Hypertension, aka high blood pressure, is a condition where the force of the blood against the walls of the arteries is consistently too high. This eventually damages the blood vessels and increases the risk of heart disease, stroke, and other serious health problems.</p>
             <img src="img/hypertension.png">
-            <p>Some text..</p>
-            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-          </div>
-          <div class="card">
-            <h2>TITLE HEADING</h2>
-            <h5>Title description, Sep 2, 2017</h5>
-            <div class="fakeimg" style="height:200px;">Image</div>
-            <p>Some text..</p>
-            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-          </div>
+              <ol>
+                <b>Types of Hypertension</b>
+                <li>
+                  <u>Primary (Essential) Hypertension</u>
+                  <ul>
+                    <li> This gradually develops over many years. It is usually referred to as the "silent killer" because there is usually no noticeable symptoms.</li>
+                  </ul>
+                </li>
+
+                <li>
+                  <u>Secondary Hypertension</u>
+                    <ul>
+                      <li>
+                        This condition occurs due to another disease present such as kidney diseae, sleep apnea, or hormonal disorders. 
+                      </li>
+                    </ul>
+                </li>
+              </ol>
+            </p>
+            <br>
+            <b>Symptoms of Hypertension</b><br>
+            High blood pressure often has no obvious symptoms, which is why it is important to regularly check your blood pressure. In severe cases, symptoms may include:
+            <ul>
+                <li>Headaches</li>
+                <li>Shortness of breath</li>
+                <li>Nosebleeds</li>
+                <li>Dizziness or lightheadedness</li>
+                <li>Chest pain (in extreme cases)</li>
+            </ul>
+                  </div>
+
+                  <div class="card">
+                    <h5>Refer to table below for normal Blood Pressure levels</h5>
+                    <table>
+                        <caption><b>Blood Pressure Normal Ranges</b></caption>
+                        <colgroup>
+                           <col id="firstCol" />
+                           <col id="label" span="4" />
+                        </colgroup>
+                        <thead>
+                           <tr>
+                              <th>Classification</th>
+                              <th>Systolic (mmHg)</th>
+                              <th>/</th>                     
+                              <th> Diastolic (mmHg)</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                        <tr class="Normal">
+                          <th>Normal</th>
+                          <td>Less than 120</td>
+                          <td></td>
+                          <td>Less than 80</td>
+                        </tr>
+
+                        <tr class="Slightly">
+                          <th>Slightly Elevated (needs monitoring)</th>
+                            <td> 130-139</td>
+                            <td></td>
+                            <td>Less than 80 </td>
+
+                        </tr>
+                        <tr class="Hypertension1">
+                          <th>Hypertension Stage 1</th>
+                            <td>130-139</td>
+                            <td>or</td>
+                            <td>80-89</td>
+                        </tr>
+
+                        <tr class="Hypertension2">
+                          <th>Hypertension Stage 2</th>
+                            <td>140 or Higher</td>
+                            <td>or</td>
+                            <td>90 or Higher</td>
+                        </tr>
+
+                        <tr class="Crisis">
+                          <th>Hypertensive Crisis</th>
+                            <td>Higher than 180</td>
+                            <td>and/or</td>
+                            <td>Higher than 120</td>
+                        </tr>
+
+                        </tbody>
+                      </table>
+                  </div>
         </div>
+
         <div class="rightcolumn">
           <div class="card">
             <hr>
@@ -105,7 +192,15 @@
 
 
 
-    <footer>
+    <footer class="footer">
+      <ul>
+        <b>Want to learn more about hypertension?</b>
+        <i>Visit the listed sources below!</i>
+        <li><a href="https://www.who.int/news-room/fact-sheets/detail/hypertension" target="_blank">Visit WHO</a></li>
+        <li><a href="https://www.mayoclinic.org/diseases-conditions/high-blood-pressure/symptoms-causes/syc-20373410" target="_blank">Visit Mayo Clinic</a></li>
+        <li><a href="https://www.heart.org/en/health-topics/high-blood-pressure" target="_blank">Visit American Heart Association</a></li>
+      </ul>
+      
         <p>© 2024 CNMI’s Disease Trio</p>
     </footer>
 </body>

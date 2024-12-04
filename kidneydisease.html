@@ -6,39 +6,62 @@
     <title>Kidney Disease</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="animation.css">
 </head>
 <body>
     <header>
-        <h1>Kidney Disease</h1>
-        <nav class="navbar">
+        <h1>
+          <img class="logo" src="img/logo.jpg">
+          Kidney Disease</h1>
+          <div class="loader" id="loader"></div>
+          <nav class="navbar">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="diabetes.html">Diabetes</a></li>
-                <li><a href="hypertension.html">Hypertension</a></li>
-                <li><a href="kidneydisease.html">Kidney Disease</a></li>
-                <li><a href="dominoeffect.html">Domino Effect</a></li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="diabetes.html">Diabetes</a></li>
+              <li><a href="hypertension.html">Hypertension</a></li>
+              <li><a href="kidneydisease.html">Kidney Disease</a></li>
+              <li><a href="dominoeffect.html">Domino Effect</a></li>
             </ul>
-        </nav>
-    </header>
+          </nav>
+        
+          <script src="animation.js"></script>
+      </header>
 
     <div class="row">
         <div class="leftcolumn">
           <div class="card">
             <h2>What is Kidney Disease?</h2>
-            <h5> It is ..............................</h5>
+            <p> Kidney disease, aka chronic kidney disease (CKD) or renal disease, is a health condition where the kidneys are damaged and can no longer filter blood effectively. This can lead to the <b>accumulation of waste, fluids, and toxins in the body</b>, causing serious health issues. It is often progressive and can result in kidney failure if not managed properly.            </p>
             <img src="img/CKD.png">
-            <p>Some text..</p>
-            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+            <p><b>Types of Kidney Disease:</b></p>
+            <ul>
+                <li><u>Chronic Kidney Disease (CKD)</u>: A chronic condition where kidney function gradually declines over time. It may lead to kidney failure if untreated. <i>CKD is common amongst patient's in the CNMI</i></li>
+                <li><u>Acute Kidney Injury (AKI)</u>: A sudden reduction in kidney function, often caused by injury, illness, or a medication reaction. This condition is reversible in some cases. <i>If not managed properly, this can lead to CKD</i></li>
+                <li><u>Polycystic Kidney Disease (PKD)</u>: A genetic disorder that causes fluid-filled cysts to form in the kidneys, which can eventually impair kidney function.</li>
+                <li><u>Glomerulonephritis</u>: Inflammation of the kidney’s filtering units (glomeruli) due to infections, autoimmune diseases, or other conditions.</li>
+            </ul>
+        
           </div>
 
           <div class="card">
-            <h2>TITLE HEADING</h2>
-            <h5>Title description, Sep 2, 2017</h5>
-            <div class="fakeimg" style="height:200px;">Image</div>
-            <p>Some text..</p>
-            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-          </div>
+            <h2>Symptoms of Kidney Disease</h2>
+    <p>During the early stages of kidney disease, it may be asymptomatic. As the condition progresses, symptoms may include:</p>
+    <ul>
+        <li>Swelling in the ankles, legs, or feet (edema)</li>
+        <li>Fatigue or weakness</li>
+        <li>Difficulty sleeping</li>
+        <li>Shortness of breath</li>
+        <li>Loss of appetite</li>
+        <li>Nausea or vomiting</li>
+        <li>Urine changes (e.g., foamy urine, blood in urine, or urinating more or less than usual)</li>
+        <li>High blood pressure</li>
+    </ul>
+
+
         </div>
+        </div>
+
+
         <div class="rightcolumn">
           <div class="card">
             <hr>
@@ -106,7 +129,15 @@
         </div>
       </div>
 
-    <footer>
+    <footer class="footer">
+      <ul>
+        <b>Want to learn more about kidney disease?</b>
+        <i>Visit the listed sources below!</i>
+        <li><a href="https://www.niddk.nih.gov/health-information/kidney-disease" target="_blank">Visit NIDDK</a></li>
+        <li><a href="https://www.mayoclinic.org/diseases-conditions/chronic-kidney-disease/symptoms-causes/syc-20354521" target="_blank">Visit Mayo Clinic</a></li>
+        <li><a href="https://www.kidney.org/news-stories/10-signs-you-may-have-kidney-disease" target="_blank">Visit National Kidney Foundation</a></li>
+      </ul>
+      
         <p>© 2024 CNMI’s Disease Trio</p>
     </footer>
 </body>
